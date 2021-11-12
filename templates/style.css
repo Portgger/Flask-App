@@ -1,0 +1,57 @@
+
+
+.table-css{
+    height:50px;
+    width:50px;
+    box-shadow:0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius:20px;
+    border-collapse:collapse;
+    font-family:roboto;
+}
+
+.Enunciado{
+    background-color:#019879;
+    color:white;
+    text-align:center;
+    font-weight:bold;
+    font-size:20px;
+    font-family:arial;
+
+}
+
+.Enunciado td:first-child{
+    border-left-style: solid;
+    border-top-left-radius: 20px;
+}
+
+.Enunciado td:last-child{
+    border-right-style: solid;
+    border-top-right-radius: 20px; 
+}
+.table-css td:first-child{
+    width:50%;
+    border-right:1px solid rgba(129, 128, 128, 0.3);
+}
+
+.button{
+    padding:15px 15px;
+    background-color:#019879;
+    border-color:#019879;
+    font-family:roboto;
+    text-decoration:none;
+    color:white;
+    border-radius:10px;
+}
+
+.button:hover{
+    transition-duration:0.4s;
+    background-color:#08c29d;
+    color:white;
+}
+
+span{
+    font-family:roboto;
+    font-size:18px;
+    font-weight:bold;
+    line-height:50px;
+}
