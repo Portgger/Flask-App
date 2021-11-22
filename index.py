@@ -34,7 +34,7 @@ def save():
     animais_dict = {'id':id_novo,'animal':animal,'classificacao':classificacao}
     animais.append(animais_dict)
 
-    return redirect('https://5000-pink-cobra-hb6xkmbn.ws-us18.gitpod.io/')
+    return redirect('https://5000-amber-lamprey-06z9fsbi.ws-us17.gitpod.io/')
 
 @app.route('/delete', methods=['POST'])
 def delete():
@@ -44,8 +44,18 @@ def delete():
         if i['id'] == id_int:
             animais.remove(i)
             
+    return redirect('https://5000-amber-lamprey-06z9fsbi.ws-us17.gitpod.io/')
+
+
+@app.route('/search', methods=['POST'])
+def search():
+    pesquisa = request.form['pesquisa']
+
+    list(filter(lambda palavra: pesquisa in palavra, animais))
+
+    return render_template('search.html',pesquisa=pesquisa,lista=animais)
 
     
-    return redirect('https://5000-pink-cobra-hb6xkmbn.ws-us18.gitpod.io/')
+
 
 app.run(debug=True)

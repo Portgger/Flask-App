@@ -1,8 +1,7 @@
 
 
 .table-css{
-    height:50px;
-    width:50px;
+    width:200px;
     box-shadow:0 0 20px rgba(0, 0, 0, 0.3);
     border-radius:20px;
     border-collapse:collapse;
@@ -19,18 +18,26 @@
 
 }
 
+
 .Enunciado td:first-child{
-    border-left-style: solid;
     border-top-left-radius: 20px;
 }
 
+
 .Enunciado td:last-child{
-    border-right-style: solid;
     border-top-right-radius: 20px; 
 }
 .table-css td:first-child{
-    width:50%;
+    width:5%;
     border-right:1px solid rgba(129, 128, 128, 0.3);
+}
+
+#td-mid-child{
+    border-right:1px solid rgba(129, 128, 128, 0.3);
+}
+
+.table-css td:last-child{
+    width:5%;
 }
 
 .button{
@@ -54,4 +61,11 @@ span{
     font-size:18px;
     font-weight:bold;
     line-height:50px;
+}
+
+.pesquisa{
+    border-radius:15px;
+    border:1px solid green;
+    margin-right:10px;
+    padding:3px 10px;
 }
